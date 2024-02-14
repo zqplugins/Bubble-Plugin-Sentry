@@ -1,0 +1,40 @@
+{
+    "category": "analytics",
+    "display": "Add Breadcrumb",
+    "fields": {
+        "ABD": {
+            "caption": "Category",
+            "doc": "A dotted string indicating what the crumb is or from where it comes. Typically it is a module name or a descriptive string. For instance, ui.click could be used to indicate that a click happened.",
+            "editor": "DynamicValue",
+            "name": "category",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABE": {
+            "caption": "Message",
+            "doc": "Human-readable message for the breadcrumb.",
+            "editor": "DynamicValue",
+            "name": "message",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABF": {
+            "caption": "Level",
+            "default_val": "info",
+            "doc": "This defines the severity level of the breadcrumb. Allowed values are, from highest to lowest: fatal, error, warning, info, and debug. Levels are used in the UI to emphasize and deemphasize the crumb. The default is info.",
+            "editor": "Dropdown",
+            "name": "level",
+            "options": "fatal,critical,error,warning,log,info,debug",
+            "rank": 2
+        },
+        "ABG": {
+            "caption": "Data",
+            "doc": "Arbitrary data associated with this breadcrumb.",
+            "editor": "key_value_list",
+            "name": "data",
+            "rank": 3,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}

@@ -1,0 +1,17 @@
+{
+    "categories": {
+        "0": "analytics",
+        "1": "productivity",
+        "2": "technical",
+        "3": "data (things)",
+        "4": "compliance"
+    },
+    "demo_page": "http://sentry-demo.bubbleapps.io/version-test",
+    "description": "Bring accurate error reporting to your bubble app with Sentry. Debug your application and prevent crashes.\n\nOpen-source error tracking with full stacktraces & asynchronous context.\n\n✅ Tracks errors in the front-end\n✅ Tracks errors in the back-end\n\nTo receive special offers and important updates please visit: https://zeroqo.de/updates\n\nNEED HELP BUILDING A CUSTOM APPLICATION?\nhttps://dev.zeroqode.com\n\nSUPERCHARGE YOUR APP WITH ZEROQODE PLUGINS\nhttps://zeroqode.com/plugins\n\nQUESTIONS OR NEED HELP?\nhttps://forum.zeroqode.com",
+    "image": "//s3.amazonaws.com/appforest_uf/f1666351658946x291053914001823800/sentry-glyph-dark-400x400.svg",
+    "license": "open_source",
+    "link": " https://zeroqode.com/plugins",
+    "name": "Sentry",
+    "plugin_instructions": "Using the plugin is very simple. All you need is a (free) Sentry account. Go ahead and sign up at -> https://sentry.io/\n\n1️⃣ Install the plugin and enter your Sentry DSN in the settings.\n\n✅ You're now automatically tracking errors on the frontend.\n\nNow, you can optionally decide to send your own errors to sentry for even more logging.\n\nTo do that, use the actions that are available in the plugin:\n\n1️⃣ Capture Server Error\n\nThis action lets you send an error to sentry from a backend workflow.\n\n2️⃣ Capture Message\n\nThis action lets you send a plain text message to sentry from a page in the frontend.\n\n3️⃣ Capture Error\n\nThis action lets you send an error to sentry from a page in the frontend.\n\n✅ That's all there's to it!",
+    "sa_node_version": 18
+}

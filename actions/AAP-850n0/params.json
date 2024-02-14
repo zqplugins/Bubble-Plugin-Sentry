@@ -1,0 +1,24 @@
+{
+    "category": "analytics",
+    "display": "Capture Server Error",
+    "fields": {
+        "AAQ": {
+            "caption": "Error",
+            "doc": "Captures an error message and sends it to sentry.",
+            "editor": "DynamicValue",
+            "name": "error",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAS": {
+            "caption": "App Version",
+            "doc": "App version, test or live.",
+            "editor": "DynamicValue",
+            "name": "app_version",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

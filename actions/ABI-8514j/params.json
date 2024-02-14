@@ -1,0 +1,81 @@
+{
+    "category": "analytics",
+    "display": "Show Feedback Widget",
+    "fields": {
+        "ABJ": {
+            "caption": "Event",
+            "default_val": "User Feedback",
+            "doc": "Manually set the id of the event that will show up in sentry.",
+            "editor": "DynamicValue",
+            "name": "event",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABK": {
+            "caption": "*️⃣ Customize Widget",
+            "editor": "Label",
+            "name": "info_customize",
+            "rank": 3
+        },
+        "ABL": {
+            "caption": "Title",
+            "default_val": "Report a problem",
+            "doc": "A custom title for the dialog.",
+            "editor": "DynamicValue",
+            "name": "title",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "ABM": {
+            "caption": "Subtitle One",
+            "default_val": "Please tell us what happened below.",
+            "doc": "Custom subtitle for the dialog.",
+            "editor": "DynamicValue",
+            "name": "sub_title_one",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "ABN": {
+            "caption": "Subtitle Two",
+            "default_val": "Our team will be notified.",
+            "doc": "Additional custom subtitle for the dialog - this won't be visible on mobile.",
+            "editor": "DynamicValue",
+            "name": "sub_title_two",
+            "optional": true,
+            "rank": 6,
+            "value": "text"
+        },
+        "ABO": {
+            "caption": "Submit Label",
+            "default_val": "Submit",
+            "doc": "Custom label text for the submit button.",
+            "editor": "DynamicValue",
+            "name": "submit_label",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        },
+        "ABP": {
+            "caption": "User Name",
+            "default_val": "",
+            "doc": "Prefill the user's name.",
+            "editor": "DynamicValue",
+            "name": "user_name",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "ABQ": {
+            "caption": "User Email",
+            "doc": "Prefill the user's email address.",
+            "editor": "DynamicValue",
+            "name": "user_email",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}

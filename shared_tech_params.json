@@ -1,0 +1,18 @@
+{
+    "assets": {
+        "ABH": {
+            "name": "replays",
+            "url": "//dd7tel2830j4w.cloudfront.net/f1669160095894x263561689015507680/replays.min.js"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": "4",
+        "use_jquery": true
+    },
+    "shared_keys": {
+        "AAp": {
+            "caption": "DSN",
+            "type": "client_safe"
+        }
+    }
+}

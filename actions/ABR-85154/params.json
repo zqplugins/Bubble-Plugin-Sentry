@@ -1,0 +1,15 @@
+{
+    "category": "plugins",
+    "display": "Re-Initialize",
+    "fields": {
+        "ABS": {
+            "caption": "dsn",
+            "doc": "New DSN to initialize Sentry client",
+            "editor": "DynamicValue",
+            "name": "dsn",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}
