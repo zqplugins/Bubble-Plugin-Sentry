@@ -1,0 +1,15 @@
+{
+    "category": "analytics",
+    "display": "Capture Message",
+    "fields": {
+        "AAc": {
+            "caption": "Message",
+            "doc": "Captures a bare message and sends it to sentry.",
+            "editor": "DynamicValue",
+            "name": "message",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}

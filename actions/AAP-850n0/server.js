@@ -1,32 +1,30 @@
-function(properties, context) {
-  let Sentry = require("@sentry/node");
+async function(properties, context) {
+    const Sentry = require("@sentry/node");
 
-  let dsn = context.keys["DSN"];
-  let environment = properties.app_version;
-  let current = context.currentUser;
+    const dsn = context.keys["DSN"];
+    const environment = properties.app_version;
+    const current = context.currentUser;
 
-  context.v3.async((callback) => {
     try {
-      Sentry.init({
-        dsn: dsn,
-        tracesSampleRate: 1.0,
-        environment: environment,
-      });
+        Sentry.init({
+            dsn: dsn,
+            tracesSampleRate: 1.0,
+            environment: environment,
+        });
 
-      let user = {
-        id: current.get("_id"),
-        email: current.get("email"),
-      };
+        const user = {
+            id: current.get("_id"),
+            email: current.get("email"),
+        };
 
-      Sentry.setUser(user);
+        Sentry.setUser(user);
 
-      let event = Sentry.captureMessage(properties.error);
+        let event = Sentry.captureMessage(properties.error);
 
-      Sentry.close(10000).then(function () {
-        callback(null, event);
-      });
+        await Sentry.close(10000).then(function () {
+            // console.log("success?");
+        });
     } catch (error) {
-      callback(error);
+        // console.log("error?" + error.message);
     }
-  });
 }
