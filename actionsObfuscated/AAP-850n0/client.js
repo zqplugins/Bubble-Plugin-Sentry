@@ -1,4 +1,5 @@
-function(properties, context) {
-	function client(_0x268a44,_0x2ce9f1){}
-	return client(properties, context);
+function(properties, context){
+	function client(_0x1b33e7, _0x3cfa46) {
+}
+	 client(properties, context);
 }

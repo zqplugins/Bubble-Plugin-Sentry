@@ -1,4 +1,5 @@
-function(properties, context) {
-	function server(_0x3590a0,_0x196240){}
-	return server(properties, context);
+function(properties, context){
+	function server(_0x35ad70, _0x59ae8f) {
+}
+	 server(properties, context);
 }

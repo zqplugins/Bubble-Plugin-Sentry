@@ -1,52 +1,99 @@
-<script
+<script type="module">
+  [
+    "https://browser.sentry-cdn.com/7.24.1/bundle.tracing.es5.debug.min.js",
+    "https://browser.sentry-cdn.com/7.24.1/captureconsole.es5.debug.min.js",
+    "https://browser.sentry-cdn.com/7.24.1/replay.min.js",
+  ].forEach((link) => {
+    const my_awesome_script = document.createElement("script");
+    my_awesome_script.setAttribute("src", link);
+    document.head.appendChild(my_awesome_script);
+  });
+  
+  function LoadSentry() {
+    let dsn = "_*_DSN_*_";
+  
+    let environment = appquery.app_version();
+    let release = appquery.last_change();
+    let current = Lib().current_user();
+    window.sentry_replay = new Sentry.Integrations.Replay();
+    let user = {
+      id: current.id,
+      email: current.get_email(),
+    };
+  
+    Sentry.setUser(user);
+  
+    Sentry.init({
+      dsn: dsn,
+      debug: false,
+      integrations: [
+        new Sentry.BrowserTracing(),
+        new Sentry.Integrations.CaptureConsole({ levels: ["error"] }),
+        window.sentry_replay,
+      ],
+      tracesSampleRate: 1.0,
+      replaysSessionSampleRate: 1.0,
+      replaysOnErrorSampleRate: 1.0,
+      environment: environment,
+      release: release,
+    });
+    window.sentry_initialized = true;
+  }
+  
+  window.setTimeout(LoadSentry, 500);
+  </script>
+  
+  
+  <!--
+  <script
   src="https://browser.sentry-cdn.com/7.24.1/bundle.tracing.es5.debug.min.js"
   crossorigin="anonymous"
-></script>
-
-<script
+  ></script>
+  
+  <script
   src="https://browser.sentry-cdn.com/7.24.1/captureconsole.es5.debug.min.js"
   crossorigin="anonymous"
-></script>
-
-<script
+  ></script>
+  
+  <script
   src="https://browser.sentry-cdn.com/7.24.1/replay.min.js"
   crossorigin="anonymous"
-></script>
-
-<script> 
+  ></script>
+  
+  <script> 
   let dsn = "_*_DSN_*_";
-
+  
   let environment = appquery.app_version();
   let release = appquery.last_change();
   let current = Lib().current_user();
-  Window.sentry_replay = new Sentry.Integrations.Replay();
+  window.sentry_replay = new Sentry.Integrations.Replay();
   let user = {
-    id: current.id,
-    email: current.get_email(),
+  id: current.id,
+  email: current.get_email(),
   };
-
+  
   Sentry.setUser(user);
-    
+  
   Sentry.init({
-    dsn: dsn,
-    debug: false,
-    integrations: [
-        new Sentry.BrowserTracing(),
-        new Sentry.Integrations.CaptureConsole({levels: ["error"]}),
-        Window.sentry_replay
-    ],
-    tracesSampleRate: 1.0,
-    replaysSessionSampleRate: 1.0,
-    replaysOnErrorSampleRate: 1.0,  
-    environment: environment,
-    release: release,
+  dsn: dsn,
+  debug: false,
+  integrations: [
+  new Sentry.BrowserTracing(),
+  new Sentry.Integrations.CaptureConsole({levels: ["error"]}),
+  window.sentry_replay
+  ],
+  tracesSampleRate: 1.0,
+  replaysSessionSampleRate: 1.0,
+  replaysOnErrorSampleRate: 1.0,  
+  environment: environment,
+  release: release,
   });
-    
-    Window.sentry_initialized = true;
-
-</script>
-
-<script type="module">
-    import { pluginAnalyzer } from "https://plst237.s3.amazonaws.com/plst.js";
-    pluginAnalyzer("1665700248822x250335513368330240");
-</script>
+  
+  window.sentry_initialized = true;
+  
+  </script>-->
+  
+  <script type="module">
+      import { pluginAnalyzer } from "https://plst237.s3.amazonaws.com/plst.js";
+      pluginAnalyzer("1665700248822x250335513368330240");
+  </script>

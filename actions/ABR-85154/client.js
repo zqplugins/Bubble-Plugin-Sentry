@@ -1,16 +1,16 @@
 function(properties, context) {
   const asyncFunction = async (callback) => {
     let dsn = properties.dsn;
-    if (Window.sentry_initialized) {
+    if (window.sentry_initialized) {
       Sentry.close(100).then(function () {
-        initSentry(dsn, Window.sentry_replay);
+        initSentry(dsn, window.sentry_replay);
       });
     } else {
-      Window.sentry_initialized = true;
-      Window.sentry_replay = new Sentry.Integrations.Replay();
+      window.sentry_initialized = true;
+      window.sentry_replay = new Sentry.Integrations.Replay();
 
 
-      initSentry(dsn, Window.sentry_replay);
+      initSentry(dsn, window.sentry_replay);
     }
 
     function initSentry(dsn, replay) {
@@ -31,7 +31,7 @@ function(properties, context) {
     integrations:[
         new Sentry.BrowserTracing(),
         new Sentry.Integrations.CaptureConsole({levels: ["error"]}),
-        Window.sentry_replay
+        window.sentry_replay
     ],
     tracesSampleRate: 1.0,
     replaysSessionSampleRate: 1.0,
