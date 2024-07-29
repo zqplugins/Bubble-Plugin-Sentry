@@ -5,6 +5,13 @@ async function(properties, context) {
     const environment = properties.app_version;
     const current = context.currentUser;
 
+    class CustomError extends Error {
+        constructor(title, description) {
+            super(`${description}`);
+            this.name = `${title}`;
+        }
+    }
+
     try {
         Sentry.init({
             dsn: dsn,
@@ -17,9 +24,11 @@ async function(properties, context) {
             email: current.get("email"),
         };
 
-        Sentry.setUser(user);
+            const title = properties.error;
+            const description = properties.body_error;
+            const error = new CustomError(title, description);
 
-        let event = Sentry.captureMessage(properties.error);
+            await Sentry.captureException(error);
 
         await Sentry.close(10000).then(function () {
             // console.log("success?");

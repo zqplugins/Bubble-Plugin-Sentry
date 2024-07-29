@@ -1,62 +1,56 @@
 function(properties, context){
-	function _0x4387() {
-    const _0x7a063d = [
-        'error',
-        '2NCGQGp',
-        '888374xuDErU',
-        'get',
-        '6uKwuqq',
-        'email',
-        '10cmsBGQ',
-        '13502929zxjPNS',
-        '8635440epOmzL',
-        'captureException',
-        '3jnsyVK',
-        '729445QCVcQm',
-        'setUser',
-        '1515357AcTXGZ',
-        '_id',
-        '24gEvGJq',
-        '5087677YUaGNr',
-        '1154444KNcgaH',
-        'withScope'
-    ];
-    _0x4387 = function () {
-        return _0x7a063d;
-    };
-    return _0x4387();
-}
-(function (_0x36b141, _0x4f605d) {
-    const _0x3b0969 = _0x180e, _0x54e20b = _0x36b141();
+	(function (_0x12c2a1, _0x3c4eee) {
+    const _0x1926c3 = _0x32ee, _0x215f89 = _0x12c2a1();
     while (!![]) {
         try {
-            const _0x265f2c = parseInt(_0x3b0969(0x193)) / 0x1 * (-parseInt(_0x3b0969(0x194)) / 0x2) + -parseInt(_0x3b0969(0x19c)) / 0x3 * (parseInt(_0x3b0969(0x190)) / 0x4) + -parseInt(_0x3b0969(0x19d)) / 0x5 + -parseInt(_0x3b0969(0x196)) / 0x6 * (-parseInt(_0x3b0969(0x18f)) / 0x7) + -parseInt(_0x3b0969(0x19a)) / 0x8 + -parseInt(_0x3b0969(0x19f)) / 0x9 * (parseInt(_0x3b0969(0x198)) / 0xa) + parseInt(_0x3b0969(0x199)) / 0xb * (parseInt(_0x3b0969(0x18e)) / 0xc);
-            if (_0x265f2c === _0x4f605d)
+            const _0x588b7a = -parseInt(_0x1926c3(0x91)) / 0x1 * (-parseInt(_0x1926c3(0x8d)) / 0x2) + -parseInt(_0x1926c3(0x93)) / 0x3 + parseInt(_0x1926c3(0x94)) / 0x4 + parseInt(_0x1926c3(0x92)) / 0x5 * (-parseInt(_0x1926c3(0x8e)) / 0x6) + parseInt(_0x1926c3(0x8f)) / 0x7 + parseInt(_0x1926c3(0x90)) / 0x8 + -parseInt(_0x1926c3(0x8c)) / 0x9;
+            if (_0x588b7a === _0x3c4eee)
                 break;
             else
-                _0x54e20b['push'](_0x54e20b['shift']());
-        } catch (_0xc320cc) {
-            _0x54e20b['push'](_0x54e20b['shift']());
+                _0x215f89['push'](_0x215f89['shift']());
+        } catch (_0x552a07) {
+            _0x215f89['push'](_0x215f89['shift']());
         }
     }
-}(_0x4387, 0x9538c));
-function _0x180e(_0x2a8bb2, _0x36adc4) {
-    const _0x438735 = _0x4387();
-    return _0x180e = function (_0x180efb, _0x2a0e47) {
-        _0x180efb = _0x180efb - 0x18d;
-        let _0x164637 = _0x438735[_0x180efb];
-        return _0x164637;
-    }, _0x180e(_0x2a8bb2, _0x36adc4);
+}(_0x387f, 0x2ff07));
+function _0x387f() {
+    const _0x4a194b = [
+        '54DEfnHt',
+        '1140223jtKalV',
+        '2969800KioztE',
+        '190825axcWCe',
+        '120685gIiFny',
+        '150732poizsc',
+        '1402576aFAegg',
+        'setUser',
+        'captureException',
+        'get',
+        'withScope',
+        '5505723yxvOHU',
+        '2WZmFvJ'
+    ];
+    _0x387f = function () {
+        return _0x4a194b;
+    };
+    return _0x387f();
 }
-function client(_0xfdcf7a, _0x3c8283) {
-    const _0xb6bb8b = _0x180e;
-    let _0x2a0df8 = new Error(_0xfdcf7a[_0xb6bb8b(0x192)]), _0x211969 = _0x3c8283['currentUser'], _0x2182bf = {
-            'id': _0x211969['get'](_0xb6bb8b(0x18d)),
-            'email': _0x211969[_0xb6bb8b(0x195)](_0xb6bb8b(0x197))
+function _0x32ee(_0x1efe63, _0x2dfe36) {
+    const _0x387f9a = _0x387f();
+    return _0x32ee = function (_0x32ee66, _0x557d0c) {
+        _0x32ee66 = _0x32ee66 - 0x89;
+        let _0x2c18f1 = _0x387f9a[_0x32ee66];
+        return _0x2c18f1;
+    }, _0x32ee(_0x1efe63, _0x2dfe36);
+}
+function client(_0x503e61, _0x539210) {
+    const _0x398c56 = _0x32ee;
+    let _0x257a70 = new Error(_0x503e61['error']), _0x16e01f = _0x539210['currentUser'], _0x3c76a3 = {
+            'id': _0x16e01f[_0x398c56(0x8a)]('_id'),
+            'email': _0x16e01f[_0x398c56(0x8a)]('email')
         };
-    Sentry[_0xb6bb8b(0x191)](_0x34203d => {
-        const _0x1d3f0c = _0xb6bb8b;
-        _0x34203d[_0x1d3f0c(0x19e)](_0x2182bf), Sentry[_0x1d3f0c(0x19b)](_0x2a0df8);
+    Sentry[_0x398c56(0x8b)](_0x24fa37 => {
+        const _0x2087f2 = _0x398c56;
+        _0x24fa37[_0x2087f2(0x95)](_0x3c76a3), Sentry[_0x2087f2(0x89)](_0x257a70);
     });
 }
 	 client(properties, context);

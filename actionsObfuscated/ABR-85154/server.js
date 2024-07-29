@@ -1,5 +1,5 @@
 async function(properties, context){
-	async function server(_0x3b0815, _0x4e8eb8) {
+	async function server(_0x3b6b9c, _0x13adbc) {
 }
 	await server(properties, context);
 }

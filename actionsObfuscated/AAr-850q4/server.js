@@ -1,5 +1,5 @@
 function(properties, context){
-	function server(_0x35ad70, _0x59ae8f) {
+	function server(_0x42437e, _0x1657b2) {
 }
 	 server(properties, context);
 }
